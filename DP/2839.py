@@ -46,3 +46,5 @@ k=int(input())
 print(func(k))
 내가 원했던 DP solution
 '''
+
+
