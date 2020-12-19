@@ -15,11 +15,9 @@ def dfs(x, y):
         for dx, dy in (1,0), (-1,0),(0,1),(0,-1):
             if 0 <= x+dx < M and 0 <= y+dy < N and table[x][y] > table[x+dx][y+dy]:
                 dp[x][y] += dfs(x+dx, y+dy)
-                print(dp)
     return dp[x][y]
 
 print(dfs(0,0))
-print(dp)
 '''
 for i in range(M):
     for j in range(N):
