@@ -12,7 +12,9 @@ for t in range(T):
         dp[i][i+1] = size[i-1] + size[i]
         print(dp)
 
-    
+    for i in range(1, N+1):
+        for j in range(1, N+1):
+            dp[i][j] = 
     
 '''
 경우의 수를 따지는 다른 접근이 필요할듯.
