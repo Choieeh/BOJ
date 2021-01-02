@@ -9,4 +9,5 @@ for i in range(N):
     matrix[i] = input()
     matrix[i] = list(matrix[i])
     
+    
 print(matrix)
