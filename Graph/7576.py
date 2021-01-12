@@ -9,9 +9,10 @@ def bfs(x, y):
         x = a[0]
         y = a[1]
         for dx, dy in (1,0), (-1,0),(0,1),(0,-1):
-            if 0 <= x + dx < M and 0 <= y + dy < N and matrix[x+dx][y+dy] == 0 and [x,y] not in q:
+            if 0 <= x + dx < M and 0 <= y + dy < N and matrix[x+dx][y+dy] == 0:
+                matrix[x+dx][y+dy] = matrix[x][y] + 1
                 q.append([x+dx, y+dy])
-    return q
+    
 
 M, N = map(int,input().split())
 
@@ -25,5 +26,12 @@ for i in range(N):
         if matrix[i][j] == 1:
             q = bfs(i, j)
 
+for i in range(N):
+    for j in range(M):
+        if matrix[i][j] == 0:
+            res = -1
+
+if res == -1:
+    result = -1
+elif res 
 print(matrix)
-print(q)
