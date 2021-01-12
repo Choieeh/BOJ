@@ -31,6 +31,7 @@ for i in range(N):
         if matrix[i][j] == 0:
             res = -1
 
+            
 if res == -1:
     result = -1
 elif res 
