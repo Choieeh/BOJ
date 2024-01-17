@@ -32,7 +32,7 @@ int main(){
             cnt += (g[i] / mid);
         }
 
-        if(cnt == n && mid > ans){
+        if(cnt >= n && mid > ans){
             ans = mid;
         }
 
